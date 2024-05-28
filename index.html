@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Software Holsstic Exam Tererging App</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add the CSS code here */
+        /* Disable selection and highlight */
+        body {
+            -webkit-touch-callout: none;
+            /* iOS Safari */
+            -webkit-user-select: none;
+            /* Safari */
+            -khtml-user-select: none;
+            /* Konqueror HTML */
+            -moz-user-select: none;
+            /* Old versions of Firefox */
+            -ms-user-select: none;
+            /* Internet Explorer/Edge */
+            user-select: none;
+            /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+        }
+
+        /* Prevent right-click menu */
+        body {
+            pointer-events: all;
+        }
+
+        /* Optionally style a message to inform the user */
+        body::before {
+            /* content: "Screenshots are not allowed on this website";*/
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app">
+        <h1>Simple Quiz</h1>
+        <div class="quiz">
+            <h2 id="question">Question goes here</h2>
+            <div id="answer-button">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            <button id="next-btn">Next</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
